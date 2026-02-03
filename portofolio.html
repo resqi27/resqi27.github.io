@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Resqi Amalia</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HERO -->
+  <header class="hero">
+    <img src="50964dd2dde0828247aaf26f697f93aa.jpg" alt="Foto Profil" class="profile-pic">
+    <h1>Resqi Amalia</h1>
+    <p class="bio">
+      Code & Data Enthusiast — turning logic and data into meaningful insights.
+    </p>
+
+    <!-- THEME SWITCH -->
+    <div class="themes">
+      <span onclick="setTheme('sage')"></span>
+      <span onclick="setTheme('sky')"></span>
+      <span onclick="setTheme('lavender')"></span>
+    </div>
+  </header>
+
+  <!-- TABS -->
+  <nav class="tabs">
+    <button class="tab active" data-tab="about">About</button>
+    <button class="tab" data-tab="projects">Projects</button>
+    <button class="tab" data-tab="skills">Skills</button>
+    <button class="tab" data-tab="contact">Contact</button>
+    <span class="indicator"></span>
+  </nav>
+
+  <!-- CONTENT -->
+  <section class="content">
+
+    <div class="panel active" id="about">
+      <h2>About Me</h2>
+      <p>
+        Saya adalah seseorang yang menyukai teknologi, desain, dan hal-hal sederhana
+        yang bermakna. Fokus pada proses, bukan hanya hasil. Saya tertarik pada dunia coding dan data.
+        Menikmati proses berpikir logis, eksplorasi insight,
+        dan membangun sesuatu secara perlahan tapi konsisten.
+      </p>
+    </div>
+
+    <div class="panel" id="projects">
+      <h2>Projects</h2>
+
+      <div class="projects">
+        <div class="project" onclick="openModal('Data Analysis Dashboard')">
+          <h4>Data Analysis Dashboard</h4>
+          <p>Python • Pandas • Visualization</p>
+        </div>
+
+        <div class="project" onclick="openModal('Web Portfolio')">
+          <h4>Personal Web Portfolio</h4>
+          <p>HTML • CSS • JavaScript</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python & SQL</li>
+        <li>Data Analysis & Visualization</li>
+        <li>Problem Solving</li>
+      </ul>
+    </div>
+
+    <div class="panel" id="contact">
+      <h2>Contact</h2>
+      <p>Email: resqiamalia2007@gmail.com</p>
+      <p>GitHub: github.com/username</p>
+    </div>
+
+  </section>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <h3 id="modal-title"></h3>
+    <p>
+      Project ini fokus pada eksplorasi data,
+      visualisasi insight, dan penyajian informasi secara jelas.
+    </p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
